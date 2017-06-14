@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int i=1000,s;
+	cout<<"Please play with me:";
+	do
+	{
+		cin>>s;
+		if(i-7==s)
+			cout<<s-7<<endl;
+		else
+		{cout<<"You are wrong,play again:";
+		cin>>s;
+		if(i-7==s)
+			cout<<s-7<<endl;
+		else 
+		cout<<"You are out!";
+		}
+	
+		i=s-7;
+
+	}while(i>0);
+	return 0;
+}
