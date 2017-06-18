@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+	char ch1,ch2;
+	printf("Let's do a psychological test.\n");
+    printf("First,if one of your friends borrows money from you,will you lend it to him?\n");
+	printf("A:Lend it to him directly.\nB:Lend it to him if he has a reasonable reason.\nC:Don't borrow.\n");
+	ch1=getchar();
+	if(ch1=='C')
+		printf("Please go home!\n");
+	else 
+	{printf("Please do the second one.What will you do if he doesn't pay back the money?\n");
+     printf("A:Forget it.\nB:Asking him for the money.\nC:Kill him!\n");
+	 getchar();
+	 ch2=getchar();
+	 if(ch2=='B'||ch2=='C')
+		 printf("You'll never have friend!!!\n");
+	 if(ch2=='A')
+		 printf("Please be my friend! Love you...\n");}
+
+	return 0;
+}
+
